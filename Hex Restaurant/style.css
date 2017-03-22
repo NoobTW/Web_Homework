@@ -1,0 +1,133 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background: #efe9e7;
+    font-family: 'Noto Sans TC', sans-serif;
+}
+
+a, a:visited, a:hover, a:visited:hover{
+    color: inherit;
+    text-decoration: none;
+}
+
+img{
+    max-width: 100%;
+}
+
+.wrapper{
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;   
+    text-align: center;
+}
+
+.sidebar{
+    float: right;
+    width: 30%;
+}
+
+.container{
+    float: right;
+    width: 70%;
+    text-align: left;
+}
+
+.sidebar .fa{
+    font-size: 1.8rem;
+    padding-right: 1rem;
+    color: #3d1101;
+}
+
+.sidebar h2{
+    display: inline-block;
+    font-weight: 400;
+    color: #3d1101;
+}
+
+.sidebar ul{
+    text-align: left;
+}
+
+.sidebar li {
+    display: block;
+    width: 100%;
+    border-bottom: 1px solid #3d1101;
+    padding: .5rem;
+}
+
+.sidebar li.activated{
+    background: #3d1101;
+    color: white;
+}
+
+.food{
+    text-align: center;
+    display: inline-block;
+    margin: .5rem auto;
+    width: 30%;
+    box-shadow: 3px 3px 2px 2px #ddd;
+    position: relative;
+}
+
+.food-name{
+    font-size: 1.2rem;
+    margin-top: 1rem;
+}
+
+.food-eng-name{
+    font-size: .8rem;
+}
+
+.food-eng-name:after{
+    display: block;
+    margin: .5rem auto 1.5rem;
+    width: 50%;
+    content: '';
+    border-bottom: 1px solid #333;
+}
+
+.food-price{
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.food-price:before{
+    content: '$';
+}
+
+.btn-add-to-cart{
+    border: 1px solid #ff5e45;
+    color: #ff5e45;
+    padding: .1rem;
+    border-radius: 5px;
+    margin: .5rem;
+    margin-bottom: 1rem;
+    cursor: pointer;
+}
+
+.heart{
+    position: absolute;
+    top: .5rem;
+    left: .5rem;
+    color: white;
+    font-weight: 800;
+}
+
+.food{
+    overflow: hidden;
+}
+
+.hot:after{
+    display: block;
+    position: absolute;
+    top: 0.8rem;
+    right: -1.6rem;
+    background: #0c9;
+    color: white;
+    font-weight: 600;
+    transform: rotate(45deg);
+    padding: .1rem 1rem;
+    content: '熱銷美食'
+}
